@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="Services style.css">
+    <link rel="stylesheet" href="Services media queries.css">
+    <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png">
+            <h1 class="name-header"> &nbsp;LOVE<br class="break">&nbsp;BUBBLES</h1>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav">
+                <a href="home.html" class="nav-item">Home</a>
+                <a href="Services.html" class="nav-item">Services</a>
+                <a href="Promos.html" class="nav-item">Promos</a>
+                <a href="newContact.html" class="nav-item">Contact</a>
+                <a href="Checkout.html" class="nav-item">Schedule  a Pickup</a>
+            </div>
+        </div>
+        <div class="header-spacer"></div>
+        <div class="offer"><header><h2>Limited Time Offer 20% off for 2 Months Contact Us Now</h2></header></div>
+    </header>
+    
+    <div>
+        <div class = "header">
+            <img src = "images/header app.png" id = "header">
+            <input type="button" value="Book Now">
+        </div>
+        <h1 id = "title"> S E R V I C E S</h1>
+    </div>
+    
+    <div class="container full">
+        <div>
+            
+            <h2>Full-Service</h2>
+            <p>
+                Our full services ensure your clothes get the best care. We use advanced machines to remove tough stains gently, with customized cycles for different fabrics and colors. Our drying process uses gentle heat to prevent wrinkles and protect fabric quality, while our folding service leaves everything neatly packed and ready for storage or wear, saving you time and effort.
+            </p>
+        </div>
+        <img src="images/full-service.png" alt="Full Service">
+    </div>
+    
+    <div class="container self">
+        <div>
+            <h2>Self-Service</h2>
+            <p>
+                Enjoy the ease and convenience of doing your laundry on your schedule with our self-service options. Our modern, user-friendly machines are equipped with powerful settings to handle all fabric types, ensuring a thorough clean and efficient dry every time. With spacious, comfortable facilities, Love Bubbles makes laundry day quick, easy, and stress-free.
+            </p>
+        </div>
+        <img src="images/self-service.jpg" alt="Self Service">
+    </div>
+    
+    <div class="container drop">
+        <div>
+            <h2>Drop-off Service</h2>
+            <p>
+                We value your time, so we offer a convenient drop-off service for clients with busy schedules. Simply bring in your laundry, and our team will handle everything—from sorting and washing to drying and folding. Using high-quality detergents and tailored wash and dry cycles, we ensure your clothes come back fresh, clean, and ready to go. Drop off your laundry, and let us take care of the rest, giving you more time for the things you love.
+            </p>
+        </div>
+        <img src="images/drop-off service.jpg" alt="Drop-off Service">
+    </div>
+
+    
+    <footer class="foot">
+        <div class="mainFooter" style="margin-bottom: 20px;"> <!-- Added inline margin -->
+            <div class="footContent1">
+                <div class="brand">
+                    <div class="logoFooter"><img src="images/logo.png"></div>
+                    <div class="nameFooter"><h1>LOVE BUBBLES</h1></div>
+                </div>
+                <div class="bio">
+                    <p>Where laundry is made easy, fresh, and maybe even a little fun!</p>
+                </div>
+            </div>
+            <div class="footContent2">
+                <div class="page-containers">
+                    <p class="page-footer">Home</p>
+                    <p class="page-footer">Services</p>
+                    <p class="page-footer">Promos</p>
+                </div>
+            </div>
+            <div class="footContent3">
+                <div class="contact-container">
+                    <h1 class="contact-heading">Contacts</h1>
+                    <p class="contact-footer">lovebubbles@yahoo.com</p>
+                    <p class="contact-footer">0917 530 6294</p>
+                    <p class="contact-footer">Facebook</p>
+                    <p class="contact-footer">Instagram</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyFooter">
+            <p>© 2024 Love Bubbles. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- Burger JS -->
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('open');
+        }
+    </script>   
+</body>
+</html>
+

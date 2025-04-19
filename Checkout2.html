@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title> Booking | Love Bubbles </title>
+        <link rel="stylesheet" href="Checkout2.css">
+        <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="Checkout2.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="images/logo.png">
+                <h1 class="name-header"> &nbsp;LOVE<br class="break">&nbsp;BUBBLES</h1>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav">
+                    <div class="nav">
+                        <a href="home.html" class="nav-item">Home</a>
+                        <a href="Services.html" class="nav-item">Services</a>
+                        <a href="Promos.html" class="nav-item">Promos</a>
+                        <a href="newContact.html" class="nav-item">Contact</a>
+                        <a href="Checkout.html" class="nav-item">Schedule  a Pickup</a>
+                    </div>
+            </div>
+            <div class="header-spacer"></div></div>
+            <div class="offer"><header><h2>Limited Time Offer 20% off for 2 Months Contact Us Now</h2></header></div>
+        </header>
+
+        <!-- Booking Container -->
+        <div class="booking-container">
+            <div class="booking-border">
+                <div class="progress-bar">
+                    <img src="images/progress-bar2.png">
+                </div>
+                <div class="progress-text">
+                    <p class="item-1">1. Your Order</p>
+                    <p class="item-2">2. Pickup Details</p>
+                    <p class="item-3">3. Finish</p>
+                </div>
+                
+                <form id="checkoutForm" action="process_checkout.php" method="post">
+                    <div class="form-container">
+                        <div class="form-name">
+                            <div class="name-container">
+                                <label for="Fname">Name</label><br>
+                                <p class="required">*</p>
+                            </div>
+                            <div class="name-container1">
+                                <input type="text" id="Fname" name="Fname" placeholder="First Name">
+                                <input type="text" id="Lname" name="Lname" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="mobile-no">
+                            <div class="mobile-container">
+                                <label for="mobile">Mobile No.</label><br>
+                                <p class="required">*</p>
+                            </div>
+                            <div class="mobile-container1">
+                                <input type="text" id="mobile" name="mobile" placeholder="09XX-XXX-XXXX">
+                            </div>
+                        </div>
+    
+                        <div class="email">
+                            <div class="email-container">
+                                <label for="email">E-Mail Address (For receipt)</label><br>
+                                <p class="required">*</p>
+                            </div>
+                            <div class="email-container1">
+                                <input type="text" id="email" name="email" placeholder="Enter E-Mail">
+                            </div>
+                        </div>
+    
+                        <div class="pay-method">
+                            <div class="pay-container">
+                                <label for="method">Payment Method</label><br>
+                                <p class="required">*</p>
+                            </div>
+                            <div class="pay-container1">
+                                <select name="method" id="method">
+                                    <option value="GCash">GCash</option>
+                                    <option value="COD">Cash-On-Delivery</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="address">
+                            <div class="address-container">
+                                <label for="address">Address</label><br>
+                                <p class="required">*</p>
+                            </div>
+                            <div class="address-container1">
+                                <input type="text" id="address" name="address" placeholder="Address">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden Inputs for Date and Time -->
+                    <input type="hidden" id="orderDateTime" name="date">
+                    
+                    <!-- Next Button -->
+                    <div class="button-container">
+                        <button type="submit" class="next-page">NEXT</button>
+                    </div>
+                </form>
+
+
+                
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="foot">
+            <div class="mainFooter">
+            <div class="footContent1">
+                <div class="brand">
+                <div class="logoFooter"><img src="images/logo.png"></div>
+                <div class="nameFooter"><h1>LOVE BUBBLES</h1></div>
+                </div>
+                <div class="bio"><p>Where laundry is made easy, fresh, and maybe even a little fun! </p></div>
+            </div>
+            <div class="footContent2">
+                <div class="page-containers">
+                    <p class="page-footer">Home</p>
+                    <p class="page-footer">Services</p>
+                    <p class="page-footer">Promos</p>
+                </div>
+            </div>
+            <div class="footContent3"><div class="contact-container">
+                <h1 class="contact-heading">Contacts</h3>
+                <p class="contact-footer">lovebubbles@yahoo.com</p>
+                <p class="contact-footer">0917 530 6294</p>
+                <p class="contact-footer">Facebook</p>
+                <p class="contact-footer">Instagram</p>
+            </div></div>
+            </div>
+            <div class="copyFooter"> <p>© 2024 Love Bubbles. All Rights Reserved.</p></div>    
+        </footer>
+        <script>
+                function toggleMenu() {
+                    const nav = document.querySelector('.nav');
+                    nav.classList.toggle('open');
+                }
+        </script>    
+    </body>
+</html>

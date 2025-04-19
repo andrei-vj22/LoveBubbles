@@ -1,0 +1,259 @@
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+    .header-container img {
+        display: none;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .break{
+        display: none;
+    }
+
+    .name-header {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;  
+        margin-bottom: 10px;
+        padding-right: 10%;
+    }
+
+    .logo-and-name {
+        padding-right: 6%;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .header-spacer {
+        height: 100px;
+    }
+   
+    .offer{
+        font-size: .5rem;
+    }
+
+
+    .nav-item {
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    /* Body */
+    #ad{
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        color: #774181;
+        font-family: 'Franklin Gothic Medium';
+    }
+
+    .header input[type="button"] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 90%); 
+        border-radius: 25px;
+        color: #ffffff;
+        background-color: #352961;
+        padding: 15px 30px;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        font-family: 'Inter';   
+    }
+
+    .full, .self, .drop {
+        flex-direction: column; 
+        gap: 10px;
+        padding: 20px;
+        margin: 3%;
+        margin-bottom: 7%;
+    }
+
+    .full img, .self img, .drop img {
+        max-width: 50%; 
+        height: auto;
+        margin: 0 auto; 
+    }
+
+    .full div, .self div, .drop div {
+        text-align: center; 
+    }
+
+    .full h2, .self h2, .drop h2 {
+        font-size: 30px; 
+    }
+
+    .full p, .self p, .drop p {
+        font-size: 15px;
+    }
+
+    /*Footer*/
+
+    .mainFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footContent1, .footContent2, .footContent3 {
+        flex: 1 1 100%;
+    }
+
+
+    .brand {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .brand h1 {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .logoFooter img {
+        width: 40px;
+    }
+
+    .copyFooter p {
+        font-size: 0.7rem;
+    }
+
+}
+
+/* Phone */
+@media (max-width: 425.5px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 15px;
+        align-items: center;
+    }
+
+    .name-header {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #352961;
+        position: absolute;
+        top: 40px; /* Adjust based on header height */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+        font-size: 0.8rem;
+        border-bottom: 1px solid white;
+    }
+
+    .nav-item:last-child {
+        border: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .header-spacer {
+        height: 40px;
+    }
+   
+    /*Body*/
+
+    .header input[type="button"] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 105%); 
+        border-radius: 25px;
+        color: #ffffff;
+        background-color: #352961;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        border: none;
+        cursor: pointer;
+        font-family: 'Inter';   
+    }
+
+    #title{
+        padding: 15px;
+        margin: 15px;
+        text-align: center;
+        font-family: 'Inter';
+        color: #352961;
+        font-stretch: ultra-expanded;
+        font-size: 1.5rem;
+    }
+
+    .full img, .self img, .drop img {
+        flex: 1; 
+        max-width: 90%; 
+        height: auto; 
+        border-radius: 10px; 
+    }
+
+    .full h2, .self h2, .drop h2 {
+        margin: 10px; 
+        font-size: 1.5rem;
+        font-family: 'Inter';
+    }
+    
+    .full p, .self p, .drop p {
+        line-height: 1.6; 
+        font-size: 0.7rem;
+        font-family: 'Inter';
+    }
+    
+
+    /*Footer*/
+    .foot {
+        padding: 10px;
+    }
+
+
+    .mainFooter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .footContent1, .footContent2, .footContent3 {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+    .bio {
+        margin-left: -30px;
+        width: 120%;  
+    }
+    
+    .copyFooter {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .copyFooter p {
+        font-size: 0.7rem;
+    }
+}

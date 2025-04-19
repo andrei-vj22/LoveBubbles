@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+
+h1,a{
+    font-family: 'Luckiest Guy', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #352961;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+}
+.header-spacer {
+    height: 80px; 
+}
+.name-header {
+    font-family: 'Luckiest Guy', sans-serif;
+}
+
+.image-container{
+    position: relative;
+
+}
+.image-container img{
+    width: 100%;
+}
+.header-container img {
+    max-width: 60px;
+    height: auto;
+}
+#headerPic{
+width: 100%;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    transition: max-height 0.3s ease;
+}
+
+
+.name-header {
+    flex: 1;
+    text-align: left;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: .1em;
+    
+}
+
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+
+.nav-item {
+    font-size: .6rem;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Inter';
+}
+.nav-item:last-child{
+    border: solid #ffffff;
+    text-decoration: none;
+}
+.nav-item:hover {
+    background-color: #ddd;
+}
+
+
+.offer{
+    width: 100%;
+    text-align: center;
+    font-size: .5rem;
+    color: #774181;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: slideIn 7s ease-in-out infinite;
+}
+
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+  
+    50%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+    75% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+/*body*/
+#ad{
+    padding: 15px;
+    margin: 15px;
+    margin-top: 50px;
+    text-align: center;
+    color: #774181;
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+.header{
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+    height: 50%;
+}
+
+.header input[type="button"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%); 
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #352961;
+    padding: .4rem 2.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';   
+    letter-spacing: .1rem;
+
+}
+
+#title{
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-family: 'Inter';
+    color: #352961;
+    font-stretch: ultra-expanded;
+    font-size: 3rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #352961;
+}
+
+
+.full, .self, .drop {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    background-color: #E1C6CF; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.self {
+    background-color: #F6E5E5;
+    display: flex;
+    flex-direction: row-reverse; 
+}
+
+.self img{
+    flex: 1; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.drop {
+    background-color: #E1C6CF; 
+}
+
+.full img, .self img, .drop img {
+    flex: 1; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.full div, .self div, .drop div {
+    flex: 1;
+}
+
+.full h2, .self h2, .drop h2 {
+    margin: 10px; 
+    font-size: 25px;
+    font-family: 'Inter';
+}
+
+.full p, .self p, .drop p {
+    line-height: 1.6; 
+    font-size: 20px;
+    font-family: 'Inter';
+    text-align: justify;
+}
+
+
+/* Footer portion*/
+.foot {
+    display: flex;
+    flex-direction: column;
+    background-color: #352961;
+    padding: 2% 0%;
+    margin: 0%;
+    width: 100%;
+    color: #ffffff;
+}
+
+
+.mainFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.footContent1, .footContent2, .footContent3 {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.brand h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.bio p{
+    font-size: .8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+}
+.footContent2 p, .footContent3 p{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.copyFooter {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.logoFooter img {
+    width: 50px;
+    height: auto;
+}
+
+
+.page-footer {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+.page-footer:hover {
+    color: #E1C6CF;
+}
+
+
+.contact-footer {
+    margin: 5px 0;
+}
+.contact-container p{
+    font-size: .8rem;
+}
+.contact-heading{
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+}

@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <title> Booking | Love Bubbles </title>
+        <link rel="stylesheet" href="Checkout.css">
+        <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="Checkout.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Header  -->
+        <header>
+            <div class="header-container">
+                <img src="images/logo.png">
+                <h1 class="name-header"> &nbsp;LOVE<br class="break">&nbsp;BUBBLES</h1>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav">
+                    <a href="home.html" class="nav-item">Home</a>
+                    <a href="Services.html" class="nav-item">Services</a>
+                    <a href="Promos.html" class="nav-item">Promos</a>
+                    <a href="newContact.html" class="nav-item">Contact</a>
+                    <a href="Checkout.html" class="nav-item">Schedule  a Pickup</a>
+                </div>
+            </div>
+            <div class="header-spacer"></div>
+            <div class="offer"><header><h2>Limited Time Offer 20% off for 2 Months Contact Us Now</h2></header></div>
+        </header>
+
+        <!-- Booking Container -->
+        <div class="booking-container">
+            <div class="booking-border">
+                <div class="progress-bar">
+                    <img src="images/progress-bar1.png">
+                </div>
+                <div class="progress-text">
+                    <p class="item-1">1. Your Order</p>
+                    <p class="item-2">2. Pickup Details</p>
+                    <p class="item-3">3. Finish</p>
+                </div>
+                <div class="table-container">
+                    <table id="order-table">
+                        <thead>
+                            <tr>
+                                <th class="services">SERVICES</th>
+                                <th class="quantity">QUANTITY</th>
+                                <th class="price">PRICE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-service-bold">
+                                        <h1 class="service-name">Full-Service</h1>
+                                    </div> 
+                                    <div class="table-service-reg">
+                                        <p> Wash, Dry, and Fold <br>
+                                        Regular Clothes (max 8k/load) <br>
+                                        Beddings & Towels (max 5kg/load) <br>
+                                        Comforter (per piece)</p> 
+                                    </div>
+                                </td>
+                                <td class="dropdown">
+                                    <form action="" name="FILTER">
+                                        <select name="filter_for" >
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </form>
+                                </td>
+                                <td class="table-price"> 
+                                    P 0.00
+                                </td>
+                            </tr>
+                            <tr class="services-desc">
+                                <td>
+                                    <div class="table-service-bold">
+                                        <h1 class="service-name">Self-Service</h1>
+                                    </div> 
+                                    <div class="table-service-reg">
+                                        <p> Wash, Dry, and Fold <br>
+                                        Regular Clothes (max 8k/load) <br>
+                                        Beddings & Towels (max 5kg/load) <br>
+                                        Comforter (per piece)</p> 
+                                    </div>
+                                    
+                                </td>
+                                    <td class="dropdown">
+                                        <form action="" name="FILTER">
+                                            <select name="filter_for" >
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </td>
+                                <td class="table-price"> 
+                                    P 0.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <div class="table-service-bold">
+                                    <h1 class="service-name">Drop-Off Service</h1>
+                                </div> 
+                                <div class="table-service-reg">
+                                    <p> Wash, Dry, and Fold <br>
+                                    Regular Clothes (max 8k/load) <br>
+                                    Beddings & Towels (max 5kg/load) <br>
+                                    Comforter (per piece)</p> 
+                                </div>
+                                
+                                </td>
+                                    <td class="dropdown">
+                                        <form action="" name="FILTER">
+                                            <select name="filter_for" >
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </form>
+                                    </td>
+                                <td class="table-price"> 
+                                    P 0.00
+                                </td>
+                            </tr>
+                            <tr class="services-desc">
+                                <td>
+                                    <div class="table-service-bold">
+                                        <h1 class="service-name">Delivery Charge</h1>
+                                    </div>
+                                    <div class="table-service-reg">
+                                        <p> Additional fees may occur depending <br>
+                                            on the load (8kg per load).</p> 
+                                    </div>
+                                
+                                </td>
+                                <td class="dropdown">
+                                    <form action="" name="FILTER">
+                                        <select name="filter_for" >
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </form>
+                                </td>
+                                <td class="table-price"> 
+                                    P 0.00
+                                </td>
+                            </tr>
+                            <tr class="services-desc">
+                                <td>
+                                    <div class="table-service-bold">
+                                        <h1 class="service-name">Pickup Charge</h1>
+                                    </div> 
+                                    <div class="table-service-reg">
+                                        <p> Minimum Charge <br>
+                                        P 50 <br>
+                                    </div>
+                                </td>
+                                <td class="dropdown">
+                                    <form action="" name="FILTER">
+                                        <select name="filter_for" disabled>
+                                            <option value="1">1</option>
+                                        </select>
+                                    </form>
+                                </td>
+                                <td class="table-price"> 
+                                    P 0.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Total -->
+                <div class="total-container">
+                    <h1 class="total-text"> TOTAL </h1>
+                    <h1 class="total-price"> P 0.00</h1>
+                </div>
+                <!-- Next Button -->
+                <div class="button-container">
+                    <a href="Checkout2.html">
+                        <button type="button" class="next-page">NEXT</button>
+                    </a>
+                </div>
+                <!-- Reminders -->
+                <div class="reminders-container">
+                    <h1 class="important-reminder"> Important Reminders</h1>
+                    <p class="reminders"> - Items exceeding the maximum 8kg per bag will be charged per kilo.</p>
+                    <p class="reminders"> - Love Bubbles is NOT responsible for checking items left in the garments (i.e pen, crayon, lipstick etc.), which may result in damage or loss of items not suitable for laundries, such as money, jewelry, pens, and the like.</p>
+                    <p class="reminders"> - Our store pick-up and delivery schedule is everyday from 10 am to 4pm .</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="foot">
+            <div class="mainFooter">
+            <div class="footContent1">
+                <div class="brand">
+                <div class="logoFooter"><img src="images/logo.png"></div>
+                <div class="nameFooter"><h1>LOVE BUBBLES</h1></div>
+                </div>
+                <div class="bio"><p>Where laundry is made easy, fresh, and maybe even a little fun! </p></div>
+            </div>
+            <div class="footContent2">
+                <div class="page-containers">
+                    <p class="page-footer">Home</p>
+                    <p class="page-footer">Services</p>
+                    <p class="page-footer">Promos</p>
+                </div>
+            </div>
+            <div class="footContent3"><div class="contact-container">
+                <h1 class="contact-heading">Contacts</h3>
+                <p class="contact-footer">lovebubbles@yahoo.com</p>
+                <p class="contact-footer">0917 530 6294</p>
+                <p class="contact-footer">Facebook</p>
+                <p class="contact-footer">Instagram</p>
+            </div></div>
+            </div>
+            <div class="copyFooter"> <p>© 2024 Love Bubbles. All Rights Reserved.</p></div>    
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('.nav');
+                nav.classList.toggle('open');
+            }
+        </script>    
+    </body>
+</html>

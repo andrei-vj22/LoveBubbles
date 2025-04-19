@@ -1,0 +1,768 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+h1,a{
+    font-family: 'Luckiest Guy', sans-serif;
+}
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #352961;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+}
+.header-spacer {
+    height: 80px; 
+}
+
+
+.image-container{
+    position: relative;
+
+}
+.image-container img{
+    width: 100%;
+}
+.btn{
+    position: absolute;
+    top: 70%; left: 22%;
+    transform: translate(-50%, -50%);
+    background-color: #352961;
+    color: white;
+    padding: .4rem 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: .1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-container img {
+    max-width: 60px;
+    height: auto;
+}
+#headerPic{
+width: 100%;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    transition: max-height 0.3s ease;
+}
+
+.nav.hidden {
+    display: none;
+}
+
+.name-header {
+    flex: 1;
+    text-align: left;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: .1em;
+}
+
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+
+.nav-item {
+    font-size: .6rem;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Inter';
+}
+.nav-item:last-child{
+    border: solid #ffffff;
+    text-decoration: none;
+}
+.nav-item:hover {
+    background-color: #ddd;
+}
+
+
+.offer{
+    width: 100%;
+    text-align: center;
+    font-size: .5rem;
+    color: #774181;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: slideIn 7s ease-in-out infinite;
+}
+
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+  
+    50%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+    75% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.caption-container{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.captionHeader{
+    text-align: center;
+    font-size: 2rem;
+    width: 50%;
+    max-height: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #352961;
+    letter-spacing: .3em;
+}
+
+
+.captionDesc{
+    width: 50%;
+    max-height: 50%;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #352961;
+    text-align: center;
+}
+
+.rating
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1C6CF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #352961;
+    width: 100%;
+    height: 10vh;
+}
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.google img{
+    width: 7rem;
+    height: 1.4rem;
+}
+.googleDesc{
+    font-size: .9rem;
+}
+
+.perk-container {
+
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    
+}
+
+
+.perkCard1, .perkCard2, .perkCard3 {
+    width: 20%; 
+    min-width: 232px; 
+    height: 60%; 
+    margin: 12.8px; 
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #352961;
+    font-size: .8rem;
+}
+
+.imagePerk1 img, .imagePerk2 img, .imagePerk3 img{
+    height: 80%;
+    width: 20%;
+}
+.perkDesc1, .perkDesc2, .perkDesc3{
+    color: 827F8C;
+    font-weight: normal;
+}
+
+
+.mission-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #352961;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 60vh;
+    background-color: #E1C6CF;
+    /* background-image: linear-gradient(#ffff,#E1C6CF, #ffff); */
+}
+.missionText{
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5px;
+}
+.missionTitle{
+    font-size: 1.5rem;
+}
+.missionDesc{
+    font-size: .8rem;
+}
+.missionPic{
+    margin-right: 5px;
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #774181;
+}
+.missionPic img{
+    width: 100%;
+}
+.visionPic{
+    margin-right: 5px;
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: -10px 10px 5px #E1C6CF;
+}
+.visionPic img{
+    width: 100%;
+}
+
+
+.vision-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #352961;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 60vh;
+    background-color: #ffffff;
+}
+.visionText{
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+.visionTitle{
+    font-size: 1.5rem;
+}
+.visionDesc{
+    font-size: .8rem;
+}
+
+.advantage-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E1C6CF;
+    /* background-image: linear-gradient(#ffff,#E1C6CF); */
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
+    padding: 20px;
+}
+
+.advantageTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #352961;
+}
+.advantageTitle h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.advantageCard1, .advantageCard2, .advantageCard3 {
+    width: 25%; 
+    min-width: 150px; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #352961;
+    
+}
+.imageAdvantage1, .imageAdvantage2, .imageAdvantage3 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.imageAdvantage1 img, .imageAdvantage2 img, .imageAdvantage3 img {
+    max-width: 100%;
+    height: auto;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    background-color: #352961;
+    padding: 2% 10%;
+    width: 100%;
+    color: #ffffff;
+}
+
+.mainFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footContent1, .footContent2, .footContent3 {
+    flex: 1 1 30%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.brand h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.bio p{
+    font-size: .8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+}
+.footContent2 p, .footContent3 p, .copyFooter p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copyFooter {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.logoFooter img {
+    width: 50px;
+    height: auto;
+}
+
+.page-footer {
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.page-footer:hover {
+    color: #E1C6CF;
+}
+
+.contact-footer {
+    margin: 5px 0;
+}
+.contact-container p{
+    font-size: .8rem;
+} 
+.contact-heading{
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+}
+
+@media (max-width: 768px) {
+    
+    .captionDesc{
+        font-size: .8rem;
+    }
+
+
+    .captionHeader{
+        font-size: 1rem;
+    }
+   .header-container img {
+        display: none;
+    }
+
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .break{
+        display: none;
+    }
+
+
+    .name-header {
+        font-size: 1.5rem;  
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .header-spacer {
+        height: 100px; 
+    }
+    
+    .offer{
+        font-size: .5rem;
+    }
+
+    .nav-item {
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.3rem 1.5rem;
+        border-radius: 0.3rem; 
+    }
+
+    .googleDesc{
+        font-size: .7rem;
+    }
+    .google img{
+        width: 7rem;
+        height: 1.4rem;
+    }
+
+    .perkCard1, .perkCard2, .perkCard3 {
+        font-size: .5rem;
+        height: 40%; 
+        text-align: center;
+    }
+    .missionPic{
+        width: 40%;
+        height: auto;
+    }
+    .visionPic{
+        width: 40%;
+        height: auto;
+    }
+
+    .advantage-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantageTitle{
+        font-size: 1rem;
+    }
+
+    .advantages {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .advantageCard1, .advantageCard2, .advantageCard3 {
+        width: 3%; 
+        text-align: center;
+        margin: 10px 0; 
+    }
+
+   
+   
+/* FOOTER */
+    .mainFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footContent1, .footContent2, .footContent3 {
+        flex: 1 1 100%; 
+    }
+
+    .brand {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .logoFooter img {
+        width: 40px; 
+    }
+
+    .copyFooter p {
+        font-size: 0.7rem;
+    }
+    /* END OF FOOTER */
+    
+}
+
+@media(max-width: 525px){
+    .header-spacer {
+        height: 110px; 
+    }
+    
+}
+@media (max-width: 425.5px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 15px;
+        align-items: center;
+    }
+
+    .name-header {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #352961;
+        position: absolute;
+        top: 40px; /* Adjust based on header height */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+        font-size: 0.8rem;
+        border-bottom: 1px solid white;
+    }
+
+    .nav-item:last-child {
+        border: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+   .btn {
+        font-size: 0.4rem;
+        padding: 0.3rem 1rem;
+        border-radius: 0.3rem; 
+        left: 23%
+    }
+    .header-spacer {
+        height: 40px; 
+    }
+    
+
+    .offer h2 {
+        font-size: 0.7rem;
+    }
+
+    .captionHeader {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .captionDesc {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+    .rating{
+        flex-direction: column-reverse;
+    }
+    .google{
+        margin-top: 10px;
+        width: 20%;
+        height: auto;
+
+    }
+    .google img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .perkCard1, .perkCard2, .perkCard3 {
+        width: 10%;
+        height: auto;
+        font-size: 0.7rem;
+        margin: 10px auto;
+    } 
+    .imagePerk1 img, .imagePerk2 img, .imagePerk3 img{
+        height: auto;
+        width: 15%;
+    }
+
+    .mission-container {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+    }
+    .vision-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .missionText, .visionText {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .missionPic, .visionPic {
+        width: 50%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .missionTitle{
+        font-size: 1rem;
+    }
+    .missionDesc{
+        font-size: .6rem;
+    }
+    
+
+    .advantage-container {
+        padding: 20px;
+        height: auto;
+    }
+
+    .advantageTitle h1 {
+        font-size: 1.2rem;
+    }
+
+    .advantages {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .advantageCard1, .advantageCard2, .advantageCard3 {
+        width: 50%;
+    }
+
+    .foot {
+        padding: 10px;
+    }
+
+    .mainFooter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footContent1, .footContent2, .footContent3 {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+    .bio {
+        margin-left: -30px;
+        width: 120%;  
+    }
+    
+    .copyFooter p {
+        font-size: 0.7rem;
+    }
+}

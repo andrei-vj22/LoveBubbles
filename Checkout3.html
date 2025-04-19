@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title> Booking | Love Bubbles </title>
+        <link rel="stylesheet" href="Checkout3.css">
+        <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="Checkout3.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img src="images/logo.png">
+                <h1 class="name-header"> &nbsp;LOVE<br class="break">&nbsp;BUBBLES</h1>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav">
+                    <div class="nav">
+                        <a href="home.html" class="nav-item">Home</a>
+                        <a href="Services.html" class="nav-item">Services</a>
+                        <a href="Promos.html" class="nav-item">Promos</a>
+                        <a href="newContact.html" class="nav-item">Contact</a>
+                        <a href="Checkout.html" class="nav-item">Schedule  a Pickup</a>
+                    </div></div>
+            </div>
+            <div class="header-spacer"></div>
+            <div class="offer"><header><h2>Limited Time Offer 20% off for 2 Months Contact Us Now</h2></header></div>
+        </header>
+
+
+        <!-- Booking Container -->
+        <div class="booking-container">
+            <div class="booking-border">
+                <div class="progress-bar">
+                    <img src="images/progress-bar3.png">
+                </div>
+                <div class="progress-text">
+                    <p class="item-1">1. Your Order</p>
+                    <p class="item-2">2. Pickup Details</p>
+                    <p class="item-3">3. Finish</p>
+                </div>
+
+                <!-- Results -->
+                <div class="result">
+                    <div class="thank-msg">
+                        <h1 class="thanks">Thank you!</h1>
+                        <h1 class="received">Your order has been received!</h1>
+                    </div>
+                    <div class="infos">
+                        <div class="cat">
+                            <h2 class="stats-date">Date/Time</h2>
+                            <h2 class="stats-orderno">Order No.</h2>
+                            <h2 class="stats-order">Order</h2>
+                            <h2 class="stats-total">Total Amount</h2>
+                            <h2 class="stats-name">Name</h2>
+                            <h2 class="stats-email">Email</h2>
+                            <h2 class="stats-phone">Phone Number</h2>
+                            <h2 class="stats-method">Pay Using</h2>
+                            <h2 class="stats-address">Address</h2>
+                        </div>
+                        <div class="data">
+                            <h2 class="datas-date">08/12/2024 - 08:08 PM</h2>
+                            <h2 class="datas-orderno">1</h2>
+                            <h2 class="datas-order"></h2>
+                            <h2 class="datas-total">N/A</h2>
+                            <h2 class="datas-name">N/A</h2>
+                            <h2 class="datas-email">N/A</h2>
+                            <h2 class="datas-phone">N/A</h2>
+                            <h2 class="datas-method">N/A</h2>
+                            <h2 class="datas-address">N/A</h2>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <p class="adjust">Prices may be adjusted upon final inspection of your items. Please check your phone and email for confirmation and updates.</p>
+                        <p class="concerns">For any concerns, you may call Love Bubbles at 09175306294 or via email to lovebubbles@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="foot">
+        <div class="mainFooter">
+        <div class="footContent1">
+            <div class="brand">
+            <div class="logoFooter"><img src="images/logo.png"></div>
+            <div class="nameFooter"><h1>LOVE BUBBLES</h1></div>
+            </div>
+            <div class="bio"><p>Where laundry is made easy, fresh, and maybe even a little fun! </p></div>
+        </div>
+        <div class="footContent2">
+            <div class="page-containers">
+                <p class="page-footer">Home</p>
+                <p class="page-footer">Services</p>
+                <p class="page-footer">Promos</p>
+            </div>
+        </div>
+        <div class="footContent3"><div class="contact-container">
+            <h1 class="contact-heading">Contacts</h3>
+            <p class="contact-footer">lovebubbles@yahoo.com</p>
+            <p class="contact-footer">0917 530 6294</p>
+            <p class="contact-footer">Facebook</p>
+            <p class="contact-footer">Instagram</p>
+        </div></div>
+        </div>
+        <div class="copyFooter"> <p>© 2024 Love Bubbles. All Rights Reserved.</p></div>    
+        </footer>
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('.nav');
+                nav.classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>
